@@ -4,7 +4,7 @@ pipeline {
   stages {
     stage('Obtener código fuente de Git') {
       steps {
-        git ''
+        git 'https://github.com/MatiAragoZ/Ejemplo1.git'
       }
     }
     
