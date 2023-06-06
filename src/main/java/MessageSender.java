@@ -11,7 +11,7 @@ public class MessageSender {
             email.setAuthenticator(new DefaultAuthenticator("matiasaravena231@gmail.com", "wdpzuwpdouiataue"));
             email.setStartTLSEnabled(true);
             email.setFrom("matiasaravena231@gmail.com");
-            email.setSubject("Prueba de envío de mensaje");
+            email.setSubject("Prueba de envío de mensaje Eclipse");
             email.setMsg("Este es un mensaje de prueba enviado desde Java utilizando Maven.");
             email.addTo("matias.aravena@cftsanagustin.cl");
             email.send();
