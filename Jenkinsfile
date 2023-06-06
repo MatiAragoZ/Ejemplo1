@@ -4,7 +4,7 @@ pipeline {
   stages {
     stage('Obtener código fuente de Git') {
       steps {
-        git 'https://github.com/MatiAragoZ/Ejemplo1.git'
+        git ''
       }
     }
     
@@ -21,6 +21,13 @@ pipeline {
         // Agrega aquí los pasos adicionales para implementar/deploy el proyecto
       }
     }
+    
+    stage('Envío de mensajes') {
+      steps {
+        sh 'java -cp target/nombre-del-proyecto.jar com.example.MessageSender'
+      }
+    }
   }
 }
+
 
